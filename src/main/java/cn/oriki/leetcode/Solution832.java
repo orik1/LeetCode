@@ -7,24 +7,20 @@ public class Solution832 {
     /**
      * 82/82 个通过测试用例
      * 执行用时：1ms
-     * 内存消耗：38.8MB
+     * 内存消耗：38.9MB
      * <p>
      * 2021-02-24
      */
     public int[][] flipAndInvertImage(int[][] A) {
-        for (int[] ints : A) {
-            for (int i = 0; i < ints.length / 2 + ints.length % 2; i++) {
-                int temp;
-                temp = ints[i];
-                ints[i] = ints[ints.length - i - 1];
-                ints[ints.length - i - 1] = temp;
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[i].length / 2; j++) {
+                int index = A[i].length - j - 1;
+                int temp = A[i][j];
+                A[i][j] = A[i][index];
+                A[i][index] = temp;
             }
-            for (int i = 0; i < ints.length; i++) {
-                if (ints[i] == 0) {
-                    ints[i] = 1;
-                } else {
-                    ints[i] = 0;
-                }
+            for (int j = 0; j < A[i].length; j++) {
+                A[i][j] ^= 1;
             }
         }
         return A;
