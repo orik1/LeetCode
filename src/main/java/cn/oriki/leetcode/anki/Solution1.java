@@ -1,14 +1,10 @@
-package cn.oriki.leetcode;
+package cn.oriki.leetcode.anki;
 
+/**
+ * https://leetcode-cn.com/problems/two-sum/
+ */
 public class Solution1 {
 
-    /**
-     * 53/53 个通过测试用例
-     * 执行用时：0ms
-     * 内存消耗：38.7MB
-     * <p>
-     * 2020-02-23
-     */
     public int[] twoSum(int[] nums, int target) {
         int arrayLength = nums.length;
         for (int i = 0; i < arrayLength; i++) {

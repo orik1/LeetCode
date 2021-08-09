@@ -1,12 +1,10 @@
-package cn.oriki.leetcode;
+package cn.oriki.leetcode.anki;
 
+/**
+ * https://leetcode-cn.com/problems/remove-vowels-from-a-string/
+ */
 public class Solution1119 {
 
-    /**
-     * 21/21个通过测试用例
-     * 执行用时：1ms
-     * 内存消耗：36.4MB
-     */
     public String removeVowels(String s) {
         return s.replace("a", "")
                 .replace("e", "")
@@ -15,11 +13,6 @@ public class Solution1119 {
                 .replace("u", "");
     }
 
-    /**
-     * 21/21个通过测试用例
-     * 执行用时：4ms
-     * 内存消耗：36.8MB
-     */
     @Deprecated
     public String _removeVowels(String s) {
         StringBuilder sb = new StringBuilder();
