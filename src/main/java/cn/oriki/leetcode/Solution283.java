@@ -1,12 +1,11 @@
 package cn.oriki.leetcode;
 
+/**
+ * 283. 移动零
+ * https://leetcode-cn.com/problems/move-zeroes/
+ */
 public class Solution283 {
 
-    /**
-     * 21/21个通过测试用例
-     * 执行用时：Oms
-     * 内存消耗：38.9MB
-     */
     public void moveZeroes(int[] nums) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {
